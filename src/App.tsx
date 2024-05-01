@@ -1,15 +1,13 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes, useRoutes } from 'react-router-dom';
-import Router from "./Routers"
+import { Route, Routes, useRoutes } from "react-router-dom";
+import Router from "./Routers";
 
 const App = () => {
   const Routers = useRoutes(Router);
 
   return (
-    
-      <Routes>
-        <Route path="/*" element={Routers}/>
-      </Routes>
+    <Routes>
+      <Route path="/*" element={Routers} />
+    </Routes>
   );
 };
 
